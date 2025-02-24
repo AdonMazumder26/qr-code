@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>qr-code</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .outfit-font {
+            font-family: "Outfit", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
 </head>
-<body>
-    
+
+<body class="outfit-font bg-slate-300 flex justify-center items-center h-screen">
+    <div class="bg-white rounded-xl max-w-fit items-center justify-center p-3 space-y-5 mx-auto">
+        <img class="rounded-xl w-60" src="./images/image-qr-code.png" alt="">
+        <div class="space-y-3">
+            <h1 class="font-bold text-slate-900 text-base text-center">Improve your front-end <br> skills by
+                building projects</h1>
+            <p class="text-slate-500 font-normal text-xs text-center">Scan the QR code to visit Frontend
+                <br>Mentor and take your coding skills to <br> the next level</p>
+        </div>
+    </div>
+
 </body>
+
 </html>
